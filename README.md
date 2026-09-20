@@ -40,7 +40,7 @@ topology from a single image. The pipeline has two stages:
 2. **TOPOS-DiT** — A single image conditioned flow-matching transformer trained on
    the TOPOS-VAE latents. Conditioning comes from DINOv2 ViT-L/14 (reg4) patch
    tokens of a single RGB(A) input.
-3. **TOPOS-Texture** — A single image conditioned image generative model that produces a UV-unwrapped texture map for the generated head mesh.
+3. **TOPOS-Texture** — A single image conditioned texture map generative model that produces a UV-unwrapped texture map for the generated head mesh.
 
 Our repository contains the training and inference code. The training data will not be released; see [`filelists/README.md`](filelists/README.md) for the on-disk
 layout the data loader expects.
