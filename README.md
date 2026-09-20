@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  HUJING Digital Media &amp; Entertainment Group, Beijing, China
+  Alibaba Group, Beijing, China
 </p>
 
 <p align="center">
@@ -79,7 +79,7 @@ mkdir -p pretrained_ckpt
 # weights
 wget -O pretrained_ckpt/dinov2_vitl14_reg4_pretrain.pth \
     https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_reg4_pretrain.pth
-    
+
 git clone --depth 1 https://github.com/facebookresearch/dinov2.git \
     pretrained_ckpt/facebookresearch_dinov2_main
 ```
