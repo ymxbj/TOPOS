@@ -1,0 +1,11 @@
+SOLVER:
+    gpu: 0,
+    run: test_pointcloud_dir
+    logdir: logs/vae
+    ckpt: ./pretrained_ckpt/TOPOS-VAE.model.pth
+
+DATA:
+    test:
+        # Every .npz under this directory is reconstructed.
+        # Each .npz must hold sphere-normalized `points` [N, 3] and `normals` [N, 3].
+        test_pointcloud_dir: ./examples/

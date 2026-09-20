@@ -1,0 +1,9 @@
+SOLVER:
+    gpu_num: 8
+    run: train
+    logdir: logs/dit
+
+DATA:
+    train:
+        batch_size: 8
+        filelist: filelists/train.txt

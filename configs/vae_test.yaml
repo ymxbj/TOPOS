@@ -1,0 +1,14 @@
+SOLVER:
+    gpu: 0,
+    run: test_pointcloud
+    logdir: logs/vae
+    # Loads the released TOPOS-VAE checkpoint by default. Override with your own
+    # `.model.pth`, or set ckpt: '' to use the latest checkpoint under
+    # `<logdir>/checkpoints/`.
+    ckpt: ./pretrained_ckpt/TOPOS-VAE.model.pth
+
+DATA:
+    test:
+        # Path to a .npz with `points` [N, 3] and `normals` [N, 3].
+        # Must be sphere-normalized into [-1, 1]^3 (see tools/sphere_normalize.py).
+        test_pointcloud_path: ./examples/face.npz

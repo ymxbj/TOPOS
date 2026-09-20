@@ -1,0 +1,12 @@
+einops
+yacs
+tqdm
+easydict
+pillow
+plyfile
+tensorboard
+trimesh
+torch_geometric
+diffusers==0.37.0
+transformers==4.56.2
+peft==0.17.0

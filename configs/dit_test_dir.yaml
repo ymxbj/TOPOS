@@ -1,0 +1,9 @@
+SOLVER:
+    gpu: 0,
+    run: test_image_dir
+    logdir: logs/dit
+    ckpt: ./pretrained_ckpt/TOPOS-DiT.model.pth
+
+DATA:
+    test:
+        test_image_dir: ./examples/

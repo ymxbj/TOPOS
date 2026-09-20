@@ -1,0 +1,54 @@
+SOLVER:
+    run: train
+    max_epoch: 1000
+    log_per_iter: 10
+    type: adamw
+    weight_decay: 0.01
+    lr: 0.001
+    lr_type: poly
+    lr_power: 0.9
+    logdir: logs/vae
+
+DATA:
+    train:
+        depth: &depth 8
+        edge_file: &edge_file ./data/edges.npy
+        cluster_file: &cluster_file ./data/cluster.npz
+        template_vertices_path: &template_vertices ./data/template_vertices.npz
+        root_dir: ./
+        use_surface: True
+        use_images: False
+        filelist: filelists/train.txt
+        batch_size: 8
+        shuffle: True
+        num_workers: 8
+
+    # Inference-time settings — no filelist; the template HGraph is rebuilt
+    # from the topology assets below and combined with point clouds supplied via
+    # `test_pointcloud_path` / `test_pointcloud_dir` in the override config.
+    test:
+        depth: *depth
+        edge_file: *edge_file
+        cluster_file: *cluster_file
+        template_vertices_path: *template_vertices
+
+MODEL:
+    base_mesh: ./data/template.obj
+    compile: True
+
+    # TOPOS-VAE shape
+    vae_out_channel: 6
+    code_channel: 32
+    num_latents: 1513
+    width: 128
+    num_encoder_layers: 8
+    point_feats: 3
+    num_freqs: 8
+    include_pi: False
+    decoder_blocks: [4, 4, 3, 3]
+    decoder_channel: [512, 512, 256, 256, 128]
+
+LOSS:
+    template_dir: ./data
+    faces_path: ./data/faces.npy
+    kl_weight: 0.001

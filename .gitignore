@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.coverage
+push.sh
+
+# Training artifacts
+logs/
+runs/
+checkpoints/
+results/
+
+# Pretrained weights (download per README)
+pretrained_ckpt/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

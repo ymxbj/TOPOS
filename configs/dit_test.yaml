@@ -1,0 +1,12 @@
+SOLVER:
+    gpu: 0,
+    run: test_image
+    logdir: logs/dit
+    # Loads the released TOPOS-DiT checkpoint by default.
+    ckpt: ./pretrained_ckpt/TOPOS-DiT.model.pth
+
+DATA:
+    test:
+        test_image_path: ./examples/face.png
+        # Optional list of seeds for multi-sample generation. Leave [] for one shot.
+        seeds: []
