@@ -8,7 +8,7 @@
   <b>Junchen Deng</b>,
   <b>Jun Liang</b>,
   <b>Jing Li</b>,
-  <b>Bowen Cai</b>,
+  <b>Bowen Cai</b><sup>‡</sup>,
   <b>Huan Fu</b><sup>‡</sup>
 </p>
 
