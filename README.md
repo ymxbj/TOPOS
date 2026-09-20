@@ -30,7 +30,7 @@
 ---
 
 TOPOS generates a high-fidelity, industry-grade 3D head with fixed MetaHuman
-topology from a single image. The pipeline has two stages:
+topology from a single image. Our framework contains three modules:
 
 1. **TOPOS-VAE** — A Perceiver-Resampler encoder consumes an unstructured
    surface point cloud; a hierarchical GNN decoder reconstructs vertex
