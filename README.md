@@ -8,7 +8,7 @@
   <b>Junchen Deng</b>,
   <b>Jun Liang</b>,
   <b>Jing Li</b>,
-  <b>Bowen Cai</b><sup>‡</sup>,
+  <b><a href="https://scholar.google.com/citations?user=Ru74_SUAAAAJ" target="_blank" rel="noopener noreferrer">Bowen Cai</b><sup>‡</sup>,
   <b><a href="https://huan-fu.github.io" target="_blank" rel="noopener noreferrer">Huan Fu</b><sup>‡</sup>
 </p>
 
