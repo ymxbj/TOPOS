@@ -1,15 +1,15 @@
 <h1 align="center">TOPOS: High-Fidelity and Efficient Industry-Grade 3D Head Generation</h1>
 
 <p align="center">
-  <b>Bojun Xiong</b><sup>*</sup>,
-  <b>Zoubin Bi</b><sup>*</sup>,
+  <b><a href="https://ymxbj.github.io" target="_blank" rel="noopener noreferrer">Bojun Xiong</b><sup>*</sup>,
+  <b><a href="https://github.com/RupertPaoZ" target="_blank" rel="noopener noreferrer">Zoubin Bi</b><sup>*</sup>,
   <b>Xinghui Peng</b>,
   <b>Yunmu Wang</b><sup>†</sup>,
   <b>Junchen Deng</b>,
   <b>Jun Liang</b>,
   <b>Jing Li</b>,
   <b>Bowen Cai</b><sup>‡</sup>,
-  <b>Huan Fu</b><sup>‡</sup>
+  <b><a href="https://huan-fu.github.io" target="_blank" rel="noopener noreferrer">Huan Fu</b><sup>‡</sup>
 </p>
 
 <p align="center">
